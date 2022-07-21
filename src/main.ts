@@ -1,7 +1,9 @@
 import App from './App.svelte'
+import '../node_modules/normalize.css/normalize.css'
+import './styles/global.scss'
 
 const app = new App({
-  target: document.getElementById('app')
+  target: document.getElementsByTagName('body')[0]
 })
 
 export default app

@@ -1,0 +1,69 @@
+@use 'colors' as *;
+html {
+  font-family: adelle-sans, Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  font-size: 62.5%;
+  font-weight: 400;
+  scroll-behavior: smooth;
+  background-color: desaturate($white,15%);
+  color: $black;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+h1 {
+  font-family: "serifa", serif;
+  font-size: 3.6rem;
+  font-weight: 700;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-family: adelle-sans, sans-serif;
+}
+
+h2 {
+  font-size: 2.4rem;
+}
+
+h3 {
+  font-size: 1.8rem;
+}
+
+p {
+  font-size: 1.6rem;
+}
+
+code {
+  font-family: ibm-plex-mono, monospace;
+  font-size: 1.4rem;
+}
+
+a {
+  color: $accent;
+}
+
+body {
+
+}
