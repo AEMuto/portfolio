@@ -1,0 +1,54 @@
+// Colors Basis
+$clr-dark-black: #22373F;
+$clr-mid-black: #2C4751;
+$clr-light-black: #365663;
+
+$clr-dark-white: #CDDDE4;
+$clr-mid-white: #E0EAEE;
+$clr-light-white: #F2F6F8;
+
+// Base Theme
+$clr__body: $clr-mid-white;
+$clr__body--brighter: $clr-light-white;
+$clr__body--darker: $clr-dark-white;
+
+$clr__txt: $clr-mid-black;
+$clr__txt--darker: $clr-dark-black;
+$clr__txt--brighter: $clr-light-black;
+
+// Accessible Colors on Light Background
+// font-size >= 14pt && font-weight >= 700 || font-size >= 18pt
+$clr__purple--light-theme: #7652ce;
+$clr__blue--light-theme: #3462d6;
+$clr__red--light-theme: #cd2416;
+$clr__orange--light-theme: #D45100;
+$clr__green--light-theme: #0a7b28;
+
+
+// Accessible Colors on Dark Background
+$clr__purple--dark-theme: #D7B7FF; // Works for any text on dark background
+$clr__blue--dark-theme: #87CBFF; // Works for any text on dark background
+$clr__red--dark-theme: #FF7F7A; // font-size >= 14pt && font-weight >= 700 || font-size >= 18pt
+$clr__orange--dark-theme: #FFA870; // font-size >= 14pt && font-weight >= 700 || font-size >= 18pt
+$clr__yellow--dark-theme: #FFD166; // Works for any text on dark background
+$clr__green--dark-theme: #9AD0C4; // Works for any text on dark background
+
+// Primary, Accent & Danger Colors
+$primary--light-theme: $clr__blue--light-theme;
+$primary--dark-theme: $clr__blue--dark-theme;
+$secondary--light-theme: $clr__purple--light-theme;
+$secondary--dark-theme: $clr__purple--dark-theme;
+$danger--light-theme: $clr__red--light-theme;
+$danger--dark-theme: $clr__red--dark-theme;
+
+// Agnostic colors pairings
+$bg-color-purple: $clr__purple--light-theme;
+$bg-color-blue: $clr__blue--light-theme;
+$font-color-yellow: $clr__yellow--dark-theme;
+$font-color-green: $clr__green--dark-theme;
+
+// Breakpoints
+$breakpoint--sm: 640px;
+$breakpoint--md: 800px;
+$breakpoint--lg: 1024px;
+$breakpoint--xl: 1280px;

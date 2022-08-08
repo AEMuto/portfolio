@@ -11,7 +11,10 @@
 	<div class="footer__content">
 		<p>
 			&copy; Antoine Marseaud {year}
-			<a href="https://github.com/AEMuto/portfolio">Source Code</a>
+			<a href="https://github.com/AEMuto/portfolio"
+			   class="footer__repo-link">
+				Code Source
+			</a>
 		</p>
 		<p>
 			<a href="mailto:antoine.marseaud@gmail.com"
@@ -33,22 +36,28 @@
 </footer>
 
 <style lang="scss">
-	@use '../styles/colors' as *;
+	@use '../../assets/scss/variables' as *;
 	
 	.footer {
-		background-color: $white;
+		background-color: $clr__body--brighter;
 		height: 6.4rem;
 		display: flex;
-		max-width: 1152px;
+		justify-content: center;
+		
 		&__content {
+			max-width: 1152px;
 			flex: 1;
 			display: flex;
+			margin: 0 auto;
 			justify-content: space-between;
 			align-items: center;
 			padding: 0 1.6rem;
 			p {
 				display: flex;
 			}
+		}
+		&__repo-link {
+			margin-left: 1rem;
 		}
 		&__social-icon {
 			display: flex;

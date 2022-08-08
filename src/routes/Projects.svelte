@@ -1,5 +1,9 @@
-<section id="projects">
-	<h2>Mes projets</h2>
+<script>
+	import {fade} from 'svelte/transition';
+</script>
+
+<section id="projects" class="section" in:fade="{{duration:250}}">
+	<h2>Projects Page</h2>
 	<p>
 		Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
 		molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum

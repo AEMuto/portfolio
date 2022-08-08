@@ -1,14 +1,15 @@
-@use 'colors' as *;
+@use 'variables' as *;
+
 html {
-  font-family: adelle-sans, Avenir, Helvetica, Arial, sans-serif;
+  font-family: "neue-haas-grotesk-text", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   box-sizing: border-box;
   font-size: 62.5%;
   font-weight: 400;
   scroll-behavior: smooth;
-  background-color: desaturate($white,15%);
-  color: $black;
+  background-color: $clr__body;
+  color: $clr__txt;
 }
 
 *,
@@ -25,11 +26,11 @@ h3,
 h4,
 h5,
 h6 {
+  font-family: "neue-haas-grotesk-display", sans-serif;
   margin: 0;
 }
 
 h1 {
-  font-family: "serifa", serif;
   font-size: 3.6rem;
   font-weight: 700;
 }
@@ -38,9 +39,8 @@ h2,
 h3,
 h4,
 h5,
-h6,
-p {
-  font-family: adelle-sans, sans-serif;
+h6 {
+  font-weight: 400;
 }
 
 h2 {
@@ -56,12 +56,12 @@ p {
 }
 
 code {
-  font-family: ibm-plex-mono, monospace;
+  font-family: "space-mono", monospace;
   font-size: 1.4rem;
 }
 
 a {
-  color: $accent;
+  color: $primary--light-theme;
 }
 
 body {

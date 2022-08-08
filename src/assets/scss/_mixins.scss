@@ -1,0 +1,17 @@
+@use 'variables' as *;
+
+@mixin container {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin content {
+  max-width: #{0.9 * $breakpoint--xl};
+  flex: 1;
+  padding: 0 1.6rem;
+  position: relative;
+}
+
+@mixin page {
+  min-height: calc(100vh - 12.8rem);
+}
