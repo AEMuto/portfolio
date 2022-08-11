@@ -1,6 +1,6 @@
 <header class="header">
 	<div class="content">
-		<h1 class="title">Antoine Marseaud</h1>
+		<h1 class="header__title">Antoine Marseaud</h1>
 		<p>This is the home page.</p>
 	</div>
 </header>
@@ -16,7 +16,7 @@
 		@include content;
 	}
 	
-	.title {
+	.header__title {
 		font-family: space-mono, monospace;
 		font-weight: 400;
 	}

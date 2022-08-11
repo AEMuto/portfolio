@@ -1,6 +1,12 @@
 <script>
 	import { link, push } from 'svelte-spa-router'
 	import ThemeSwitcher from 'svelte-material-icons/Brightness6.svelte'
+	
+	const switchTheme = () => {
+		const root = document.documentElement.dataset
+		root.theme = root.theme === 'dark' ? 'light' : 'dark';
+	}
+
 </script>
 
 <nav class="nav">
@@ -14,7 +20,11 @@
 				<li><a href="#contact" title="Comment me contacter">Me contacter</a>
 				</li>
 			</ul>
-			<span class="theme-switcher" title="Changer le thème">
+			<span
+						class="theme-switcher"
+						title="Changer le thème"
+						on:click={switchTheme}
+			>
 				<ThemeSwitcher size="2rem"/>
 			</span>
 		</div>
@@ -27,10 +37,12 @@
 	
 	.nav {
 		height: 6.4rem;
-		background-color: var(--color__body--brighter);
+		background-color: var(--color__body--brighter-transparent);
+		//opacity: 0.9;
 		position: fixed;
+		z-index: 1 ;
 		width: 100%;
-		backdrop-filter: blur(3px);
+		backdrop-filter: blur(4px);
 		top: 0;
 		
 		&__content {
@@ -87,7 +99,7 @@
 			}
 			
 			a:hover {
-				color: var(--color__primary--darker);
+				color: var(--color__secondary);
 				
 				&:before {
 					transform: translateX(-50%);
@@ -115,7 +127,7 @@
 			color: var(--color__primary);
 			margin-left: 2rem;
 			&:hover {
-				color: var(--color__primary--darker);
+				color: var(--color__secondary);
 			}
 		}
 	}

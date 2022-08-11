@@ -8,6 +8,7 @@
 @mixin content {
   max-width: #{0.9 * $breakpoint--xl};
   flex: 1;
+  margin: 0 auto;
   padding: 0 1.6rem;
   position: relative;
 }

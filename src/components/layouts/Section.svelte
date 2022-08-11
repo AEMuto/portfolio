@@ -11,6 +11,7 @@
 	
 	.section {
 		@include container;
+		background-color: #fff;
 	}
 
 </style>

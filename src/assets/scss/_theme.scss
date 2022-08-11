@@ -3,34 +3,50 @@
 
 :root {
   --color__primary: #{$primary--light-theme};
-  --color__primary--darker: #{color.adjust($primary--light-theme, $saturation: 50, $lightness: -20)};
-  --color__primary--muted: #{color.adjust($primary--light-theme, $alpha: -0.6)};
+  --color__primary--hover: #{color.adjust($primary--light-theme, $saturation: 50, $lightness: -20)};
+  --color__primary--transparent: #{color.adjust($primary--light-theme, $alpha: -0.6)};
   --color__secondary: #{$secondary--light-theme};
   --color__accent: #{$accent--light-theme};
   --color__danger: #{$danger--light-theme};
 
+  $alpha__body: -0.1;
   --color__body: #{$clr__body};
+  --color__body--transparent: #{color.adjust($clr__body, $alpha: $alpha__body)};
   --color__body--brighter: #{$clr__body--brighter};
+  --color__body--brighter-transparent: #{color.adjust($clr__body--brighter, $alpha: $alpha__body)};
   --color__body--darker: #{$clr__body--darker};
+  --color__body--darker-transparent: #{color.adjust($clr__body--darker, $alpha: $alpha__body)};
 
+  $alpha__txt: -0.2;
   --color__txt: #{$clr__txt};
+  --color__txt--transparent: #{color.adjust($clr__txt, $alpha: $alpha__txt)};
   --color__txt--darker: #{$clr__txt--darker};
+  --color__txt--darker-transparent: #{color.adjust($clr__txt--darker, $alpha: $alpha__txt)};
   --color__txt--brighter: #{$clr__txt--brighter};
+  --color__txt--brighter-transparent: #{color.adjust($clr__txt--brighter, $alpha: $alpha__txt)};
 
   @media screen {
     &[data-theme="dark"] {
       --color__primary: #{$primary--dark-theme};
+      --color__primary--hover: #{color.adjust($primary--dark-theme, $saturation: 50, $lightness: 10)};
+      --color__primary--transparent: #{color.adjust($primary--dark-theme, $alpha: -0.6)};
       --color__secondary: #{$secondary--dark-theme};
       --color__accent: #{$accent--dark-theme};
       --color__danger: #{$danger--dark-theme};
 
       --color__body: #{$clr__txt};
+      --color__body--transparent: #{color.adjust($clr__txt, $alpha: $alpha__body)};
       --color__body--brighter: #{$clr__txt--brighter};
+      --color__body--brighter-transparent: #{color.adjust($clr__txt--brighter, $alpha: $alpha__body)};
       --color__body--darker: #{$clr__txt--darker};
+      --color__body--darker-transparent: #{color.adjust($clr__txt--darker, $alpha: $alpha__body)};
 
       --color__txt: #{$clr__body};
+      --color__txt--transparent: #{color.adjust($clr__body, $alpha: $alpha__txt)};
       --color__txt--darker: #{$clr__body--darker};
+      --color__txt--darker-transparent: #{color.adjust($clr__body--darker, $alpha: $alpha__txt)};
       --color__txt--brighter: #{$clr__body--brighter};
+      --color__txt--brighter-transparent: #{color.adjust($clr__body--brighter, $alpha: $alpha__txt)};
     }
   }
 }
