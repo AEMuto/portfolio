@@ -39,7 +39,7 @@
 	@use '../../assets/scss/variables' as *;
 	
 	.footer {
-		background-color: $clr__body--brighter;
+		background-color: var(--color__body--brighter);
 		height: 6.4rem;
 		display: flex;
 		justify-content: center;

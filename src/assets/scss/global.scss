@@ -1,15 +1,16 @@
 @use 'variables' as *;
+@use 'theme';
 
 html {
-  font-family: "neue-haas-grotesk-text", sans-serif;
+  font-family: "acumin-pro", sans-serif;
+  font-size: 62.5%;
+  font-weight: 400;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   box-sizing: border-box;
-  font-size: 62.5%;
-  font-weight: 400;
   scroll-behavior: smooth;
-  background-color: $clr__body;
-  color: $clr__txt;
+  background-color: var(--color__body);
+  color: var(--color__txt);
 }
 
 *,
@@ -20,17 +21,8 @@ html {
   margin: 0;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "neue-haas-grotesk-display", sans-serif;
-  margin: 0;
-}
-
 h1 {
+  font-family: "ivyjournal", sans-serif;
   font-size: 3.6rem;
   font-weight: 700;
 }
@@ -40,30 +32,16 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 400;
-}
-
-h2 {
-  font-size: 2.4rem;
-}
-
-h3 {
-  font-size: 1.8rem;
+  font-family: "acumin-pro-wide", sans-serif;
+  font-weight: 600;
+  margin: 0;
 }
 
 p {
-  font-size: 1.6rem;
-}
-
-code {
-  font-family: "space-mono", monospace;
-  font-size: 1.4rem;
+  font-size: 1.8rem;
 }
 
 a {
-  color: $primary--light-theme;
-}
-
-body {
-
+  color: var(--color__primary);
+  text-decoration: underline;
 }

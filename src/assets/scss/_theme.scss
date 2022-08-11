@@ -1,0 +1,36 @@
+@use 'variables' as *;
+@use 'sass:color';
+
+:root {
+  --color__primary: #{$primary--light-theme};
+  --color__primary--darker: #{color.adjust($primary--light-theme, $saturation: 50, $lightness: -20)};
+  --color__primary--muted: #{color.adjust($primary--light-theme, $alpha: -0.6)};
+  --color__secondary: #{$secondary--light-theme};
+  --color__accent: #{$accent--light-theme};
+  --color__danger: #{$danger--light-theme};
+
+  --color__body: #{$clr__body};
+  --color__body--brighter: #{$clr__body--brighter};
+  --color__body--darker: #{$clr__body--darker};
+
+  --color__txt: #{$clr__txt};
+  --color__txt--darker: #{$clr__txt--darker};
+  --color__txt--brighter: #{$clr__txt--brighter};
+
+  @media screen {
+    &[data-theme="dark"] {
+      --color__primary: #{$primary--dark-theme};
+      --color__secondary: #{$secondary--dark-theme};
+      --color__accent: #{$accent--dark-theme};
+      --color__danger: #{$danger--dark-theme};
+
+      --color__body: #{$clr__txt};
+      --color__body--brighter: #{$clr__txt--brighter};
+      --color__body--darker: #{$clr__txt--darker};
+
+      --color__txt: #{$clr__body};
+      --color__txt--darker: #{$clr__body--darker};
+      --color__txt--brighter: #{$clr__body--brighter};
+    }
+  }
+}

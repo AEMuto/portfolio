@@ -20,7 +20,3 @@
 <Section id="contact">
 	<Contact/>
 </Section>
-
-<style lang="scss">
-
-</style>
