@@ -2,16 +2,13 @@
 	export let id;
 </script>
 
-<section class="section" id={id}>
-	<slot></slot>
+<section class="section">
+	<div class="section__wrapper">
+		<slot></slot>
+	</div>
 </section>
 
 <style lang="scss">
-	@use '../../assets/scss/mixins' as *;
-	
-	.section {
-		@include container;
-		background-color: #fff;
-	}
+
 
 </style>

@@ -1,18 +1,16 @@
 @use 'variables' as *;
 
-@mixin container {
-  display: flex;
-  flex-direction: column;
-}
-
-@mixin content {
-  max-width: #{0.9 * $breakpoint--xl};
-  flex: 1;
+@mixin section-wrapper {
+  min-height: calc(100vh - 6.4rem);
+  max-width: 1152px;
   margin: 0 auto;
   padding: 0 1.6rem;
-  position: relative;
+  display: grid;
 }
 
-@mixin page {
-  min-height: calc(100vh - 12.8rem);
+@mixin section-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
 }

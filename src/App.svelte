@@ -15,6 +15,7 @@
 	main {
 		margin-top: 6.4rem;
 		min-height: calc(100vh - 12.8rem);
+		overflow: hidden;
 	}
 
 </style>
