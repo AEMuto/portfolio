@@ -23,7 +23,6 @@ html {
 
 h1 {
   font-family: "ivyjournal", sans-serif;
-  font-size: 3.6rem;
   font-weight: 700;
 }
 
@@ -44,4 +43,8 @@ p {
 a {
   color: var(--color__primary);
   text-decoration: underline;
+}
+
+.emphasis {
+  color: var(--color__primary);
 }

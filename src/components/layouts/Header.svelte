@@ -1,16 +1,17 @@
 <script>
 	import Button from '../Button.svelte';
 	import Subtitle from '../Subtitle.svelte';
+	import Title from '../Title.svelte';
 </script>
 
 <header class="header">
 	<div class="header__wrapper">
 		<div class="header__column">
 			<Subtitle>Bonjour Interweb!</Subtitle>
-			<h1 class="header__title">
+			<Title size="big">
 				Je m’appelle<br>
-				<span>Antoine Marseaud</span>
-			</h1>
+				<span class="emphasis">Antoine Marseaud</span>
+			</Title>
 			<p class="header__info">
 				Je suis quelqu'un d'enthousiaste qui aime résoudre des problèmes grâce
 				au code. Ma plus grande source de motivation est la construction de
@@ -55,19 +56,6 @@
 				height: 100%;
 				background-color: var(--color__primary);
 				z-index: -1;
-			}
-		}
-		
-		&__title {
-			font-size: 4.8rem;
-			position: relative;
-			text-decoration: underline solid 2rem var(--color__accent);
-			text-decoration-skip-ink: none;
-			text-underline-offset: -.5rem;
-			line-height: 1.5;
-			
-			span {
-				color: var(--color__primary);
 			}
 		}
 		

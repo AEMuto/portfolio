@@ -1,14 +1,15 @@
 <script>
 
+import Title from '../Title.svelte';
 </script>
 
 <section class="section">
 	<div class="section__wrapper">
 		<div class="section__column">
-			<h1 class="section__title">
+			<Title size="medium">
 				Quelques mots <br>
-				<span>À propos</span> de moi
-			</h1>
+				<span class="emphasis">À propos</span> de moi
+			</Title>
 			<p class="section__info">
 				Ancien élève des Arts Décoratifs, j'ai une appétence certaine pour le
 				design graphique, qui inclue également la programmation informatique et
