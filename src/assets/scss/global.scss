@@ -41,8 +41,8 @@ p {
 }
 
 a {
-  color: var(--color__primary);
-  text-decoration: underline;
+  color: unset;
+  text-decoration: none;
 }
 
 .emphasis {

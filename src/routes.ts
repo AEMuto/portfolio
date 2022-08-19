@@ -4,9 +4,6 @@ import NotFound from "./routes/NotFound.svelte";
 
 export default {
 	'/': Home,
-	'/#about': Home,
-	'/#projects': Home,
-	'/#contact': Home,
-	'/projects': Projects,
+	'/project/:id': Projects,
 	'/*': NotFound
 }

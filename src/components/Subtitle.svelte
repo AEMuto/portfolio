@@ -11,6 +11,8 @@
 
 <style lang="scss">
 	.subtitle {
+		align-self: start;
+		display: inline-block;
 		span {
 			background-color: var(--color__accent);
 			display: inline-flex;
