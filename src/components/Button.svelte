@@ -28,7 +28,7 @@
 		
 		&--alternate {
 			border: solid 2px var(--color__primary);
-			background-color: var(--color__body);
+			background-color: transparent;
 			color: var(--color__primary);
 			
 			&:hover {

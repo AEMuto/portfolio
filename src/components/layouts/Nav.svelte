@@ -40,7 +40,7 @@
 		background-color: var(--color__body--brighter-transparent);
 		//opacity: 0.9;
 		position: fixed;
-		z-index: 1 ;
+		z-index: 10;
 		width: 100%;
 		backdrop-filter: blur(4px);
 		top: 0;
